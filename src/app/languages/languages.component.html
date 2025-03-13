@@ -1,1 +1,12 @@
-<p>languages works!</p>
+<ul *ngFor="let lang of languages;">
+        <li>
+		<b>Languages:</b> <br>
+		Origin language:<br>
+                {{ lang.originLanguage }} <br>
+		Foreign language:<br>
+                {{ lang.exLanguage}} <br>
+        </li>
+
+</ul>
+
+

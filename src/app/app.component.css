@@ -1,4 +1,5 @@
 /* Centra todo el contenido dentro de la celda */
+
 .header-content {
   display: flex; /* Usamos flexbox para alinearlos en una fila */
   justify-content: space-between; /* Distribuye el espacio entre los bloques */

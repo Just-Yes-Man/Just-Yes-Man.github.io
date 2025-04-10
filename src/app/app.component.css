@@ -1,60 +1,51 @@
-/* Estilo para el contenedor de la tabla */
-.contenedor-tabla {
-  width: 80%; /* Ajusta el ancho de la tabla */
-  margin: 0 auto; /* Centra la tabla en la página */
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-/* Estilo para la tabla */
-.tabla {
+/* Centra el contenido dentro de la celda que contiene el app-header */
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los tres bloques */
+  align-items: center; /* Centra verticalmente */
+  text-align: left; /* Alineación del texto a la izquierda */
   width: 100%;
-  border-collapse: collapse; /* Elimina el espacio entre celdas */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Estilo para las celdas de la tabla */
+/* Estilos para las secciones izquierda, central y derecha */
+.header-content .left,
+.header-content .right {
+  flex: 1; /* Se expanden para ocupar el espacio disponible */
+  padding: 10px;
+}
+
+.header-content .center {
+  text-align: center;
+  flex: 0 0 auto; /* No se expande, se centra */
+}
+
+/* Asegura que las imágenes no se desborden y se mantengan en su tamaño */
+.header-content img {
+  max-width: 100%; /* Asegura que la imagen no se desborde */
+  height: auto;
+}
+
+/* Estilos de la tabla, ajustados para que todo se vea bien */
 .tabla td {
   padding: 10px;
   text-align: center;
-  vertical-align: middle; /* Alineación vertical */
-  border: 1px solid #ddd; /* Borde gris claro */
-  background-color: #fff; /* Fondo blanco para las celdas */
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
 
-
+/* Estilo del título */
 .titulo {
-  background-color: #4CAF50; /* Fondo verde */
-  color: white; /* Texto blanco */
+  background-color: #4CAF50;
+  color: white;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  padding: 15px; /* Más espacio en las celdas */
-  border-radius: 5px; /* Bordes redondeados */
-  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Arial', sans-serif;
 }
-
-/* Estilo para los encabezados de las celdas */
-.tabla td[colspan="2"] {
-  background-color: #f1f1f1; /* Fondo gris claro */
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Estilo para los componentes dentro de las celdas (como app-header, app-work-experience, etc.) */
-app-header, app-work-experience, app-skills, app-education, app-certificates, app-languages, app-interests {
-  display: block;
-  margin: 0 auto;
-  padding: 10px;
-  text-align: left;
-  font-size: 14px;
-}
-
-/* Estilo para la última fila para que no haya problemas de diseño */
-.tabla tr:last-child td {
-  border-bottom: none; /* Quitar el borde inferior en la última fila */
-}
-
-

@@ -1,45 +1,33 @@
-/* Centra todo el contenido dentro de la celda */
-
+/* Centra el contenido dentro de la celda que contiene el app-header */
 .header-content {
-  display: flex; /* Usamos flexbox para alinearlos en una fila */
-  justify-content: space-between; /* Distribuye el espacio entre los bloques */
-  align-items: center; /* Centra verticalmente los bloques dentro de la fila */
+  display: flex;
+  justify-content: space-between; /* Espacio entre los tres bloques */
+  align-items: center; /* Centra verticalmente */
+  text-align: left; /* Alineación del texto a la izquierda */
   width: 100%;
-  box-sizing: border-box; /* Asegura que los padding no afecten el tamaño */
   padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Estilo para el bloque izquierdo */
-.header-content .left {
-  flex: 1; /* Se expande para llenar el espacio */
-  padding: 10px;
-}
-
-/* Estilo para el bloque central */
-.header-content .center {
-  text-align: center; /* Centra el contenido del bloque */
-  padding: 10px;
-  flex: 0 0 auto; /* No se expande, se ajusta al contenido */
-}
-
-/* Estilo para el bloque derecho */
+/* Estilos para las secciones izquierda, central y derecha */
+.header-content .left,
 .header-content .right {
-  flex: 1; /* Se expande para llenar el espacio */
+  flex: 1; /* Se expanden para ocupar el espacio disponible */
   padding: 10px;
 }
 
-/* Asegura que la imagen se ajuste correctamente */
+.header-content .center {
+  text-align: center;
+  flex: 0 0 auto; /* No se expande, se centra */
+}
+
+/* Asegura que las imágenes no se desborden y se mantengan en su tamaño */
 .header-content img {
-  max-width: 100%; /* La imagen no se desbordará del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: 100%; /* Asegura que la imagen no se desborde */
+  height: auto;
 }
 
-/* Estilo para el texto dentro de los p */
-.header-content p {
-  margin: 5px 0; /* Añade un pequeño margen entre los párrafos */
-}
-
-/* Asegura que la tabla tenga el estilo correcto */
+/* Estilos de la tabla, ajustados para que todo se vea bien */
 .tabla td {
   padding: 10px;
   text-align: center;
@@ -48,4 +36,16 @@
   background-color: #fff;
   box-sizing: border-box;
   word-wrap: break-word;
+}
+
+/* Estilo del título */
+.titulo {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Arial', sans-serif;
 }

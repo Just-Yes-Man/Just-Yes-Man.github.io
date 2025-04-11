@@ -1,12 +1,16 @@
-<ul *ngFor="let lang of languages;">
-        <li>
-		<b>Languages:</b> <br>
-		Origin language:<br>
-                {{ lang.originLanguage }} <br>
-		Foreign language:<br>
-                {{ lang.exLanguage}} <br>
+<ul *ngFor="let lang of languages" class="language-list">
+        <li class="language-item">
+          <div class="language-title">
+            <b>Lenguaje:</b>
+          </div>
+          <div class="language-detail">
+            <span class="label">Origin language:</span>
+            <span class="value">{{ lang.originLanguage }}</span>
+          </div>
+          <div class="language-detail">
+            <span class="label">Foreign language:</span>
+            <span class="value">{{ lang.exLanguage }}</span>
+          </div>
         </li>
-
-</ul>
-
-
+      </ul>
+      

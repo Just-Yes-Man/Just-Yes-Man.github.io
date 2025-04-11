@@ -1,0 +1,32 @@
+.language-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .language-item {
+    border: 1px solid #ccd;
+    background-color: #f0f4ff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .language-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 6px;
+  }
+  
+  .language-detail {
+    margin-bottom: 6px;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #2e3a59;
+  }
+  
+  .value {
+    color: #4a4a4a;
+  }
+  

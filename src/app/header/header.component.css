@@ -1,0 +1,36 @@
+.header-info {
+    display: flex;
+    justify-content: center; /* centra horizontalmente el contenido interno */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 800px;         /* evita que se desborde */
+    margin: 0 auto;           /* centra el contenedor en la celda */
+  }
+  
+  .header-left,
+  .header-right {
+    flex: 1;
+    min-width: 200px;
+    text-align: center; /* opcional: centra el texto en cada columna */
+  }
+  
+  .header-photo {
+    flex-shrink: 0;
+    text-align: center;
+  }
+  
+  .header-photo img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  

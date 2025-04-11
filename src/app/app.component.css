@@ -1,62 +1,35 @@
-/* Centra el contenido dentro de la celda que contiene el app-header */
-.header-content {
-  display: flex;
-  justify-content: space-between; /* Espacio entre los tres bloques */
-  align-items: center; /* Centra verticalmente */
-  text-align: left; /* Alineación del texto a la izquierda */
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Estilos para las secciones izquierda, central y derecha */
-.header-content .left,
-.header-content .right {
-  flex: 1; /* Se expanden para ocupar el espacio disponible */
-  padding: 10px;
-}
-
-.header-content .center {
-  text-align: center;
-  flex: 0 0 auto; /* No se expande, se centra */
-}
-
-/* Asegura que las imágenes no se desborden y se mantengan en su tamaño */
-.header-content img {
-  max-width: 100%; /* Asegura que la imagen no se desborde */
-  height: auto;
-}
-.tabla {
-   width: 50%;
-}
-/* Estilos de la tabla, ajustados para que todo se vea bien */
-.tabla td {
-  padding: 10px;
-  text-align: center;
-  vertical-align: middle;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
-
-/* Estilo del título */
-.titulo {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px;
-  border-radius: 5px;
-  font-family: 'Arial', sans-serif;
-
-}
-
+/* Centra la tabla completa en la página */
 .contenedor-tabla {
-  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: seashell;
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+/* Estilo para la tabla */
+.tabla {
+  width: 90%;                /* 👈 Esto hace que la tabla se vea más ancha */        /* 👈 Máximo permitido (puedes aumentar si gustas) */
+  min-width: 80%;          /* 👈 Opcional, para que no se haga muy pequeña */
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Aplica centrado horizontal a todas las celdas */
+.tabla td {
+  text-align: center;
+  vertical-align: top;
+  padding: 20px;
+}
+
+/* Opcional: título azul bonito */
+.titulo {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 15px;
 }

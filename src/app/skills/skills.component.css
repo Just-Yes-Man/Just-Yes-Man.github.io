@@ -1,0 +1,32 @@
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skill-item {
+    border: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .skill-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 6px;
+  }
+  
+  .skill-detail {
+    margin-bottom: 6px;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #2d3e50;
+  }
+  
+  .value {
+    color: #4a4a4a;
+  }
+  

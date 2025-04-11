@@ -1,8 +1,15 @@
-<ul *ngFor="let cer of certificates;">
-        <li>
-		<b>Certificates:</b> <br>
-                {{ cer.certificateWeb }} <br>
-                {{ cer.certificateMobile}} <br>
+<ul *ngFor="let cer of certificates" class="certificate-list">
+        <li class="certificate-item">
+          <div class="certificate-title">
+            <b>Certificates:</b>
+          </div>
+          <div class="certificate-detail">
+            <span class="label">Web Certificate:</span>
+            <span class="value">{{ cer.certificateWeb }}</span>
+          </div>
+          <div class="certificate-detail">
+            <span class="label">Mobile Certificate:</span>
+            <span class="value">{{ cer.certificateMobile }}</span>
+          </div>
         </li>
-
-</ul>
+      </ul>

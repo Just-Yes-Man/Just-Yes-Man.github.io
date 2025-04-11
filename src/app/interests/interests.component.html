@@ -1,8 +1,11 @@
-<ul *ngFor="let inter of interests;">
-        <li>
-	        <b>Interests Work:</b> <br>
-                {{ inter.work }} <br>
-                
+<ul *ngFor="let inter of interests" class="interest-list">
+        <li class="interest-item">
+          <div class="interest-title">
+            <b>Interests Work:</b>
+          </div>
+          <div class="interest-detail">
+            <span class="value">{{ inter.work }}</span>
+          </div>
         </li>
-
-</ul>
+      </ul>
+      

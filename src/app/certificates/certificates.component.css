@@ -1,0 +1,32 @@
+.certificate-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .certificate-item {
+    border: 1px solid #ccc;
+    background-color: #f0f8ff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .certificate-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 6px;
+  }
+  
+  .certificate-detail {
+    margin-bottom: 6px;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .value {
+    color: #34495e;
+  }
+  

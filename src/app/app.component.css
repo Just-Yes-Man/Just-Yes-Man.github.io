@@ -1,4 +1,4 @@
-/* Centra la tabla completa en la página */
+
 .contenedor-tabla {
   display: flex;
   justify-content: center;
@@ -6,10 +6,10 @@
   background-color: #f8f9fa;
 }
 
-/* Estilo para la tabla */
+
 .tabla {
-  width: 90%;                /* 👈 Esto hace que la tabla se vea más ancha */        /* 👈 Máximo permitido (puedes aumentar si gustas) */
-  min-width: 80%;          /* 👈 Opcional, para que no se haga muy pequeña */
+  width: 90%;                
+  min-width: 80%;          
   border-collapse: collapse;
   background-color: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -17,14 +17,14 @@
   overflow: hidden;
 }
 
-/* Aplica centrado horizontal a todas las celdas */
+
 .tabla td {
   text-align: center;
   vertical-align: top;
   padding: 20px;
 }
 
-/* Opcional: título azul bonito */
+
 .titulo {
   background-color: #007bff;
   color: white;

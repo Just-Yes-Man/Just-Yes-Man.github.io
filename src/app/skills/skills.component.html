@@ -1,10 +1,16 @@
-<ul *ngFor="let sk of skills;">
-        <li>
-		<b>Skills:</b> <br>
-		Frameworks: <br>
-                {{ sk.frameworks }} <br>
-		Languages: <br>
-                {{ sk.languages}} <br>
+<ul *ngFor="let sk of skills" class="skill-list">
+        <li class="skill-item">
+          <div class="skill-title">
+            <b>Skills:</b>
+          </div>
+          <div class="skill-detail">
+            <span class="label">Frameworks:</span>
+            <span class="value">{{ sk.frameworks }}</span>
+          </div>
+          <div class="skill-detail">
+            <span class="label">Languages:</span>
+            <span class="value">{{ sk.languages }}</span>
+          </div>
         </li>
-
-</ul>
+      </ul>
+      

@@ -1,0 +1,27 @@
+.interest-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .interest-item {
+    border: 1px solid #bbb;
+    background-color: #fffbea;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .interest-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 6px;
+  }
+  
+  .interest-detail {
+    margin-bottom: 6px;
+  }
+  
+  .value {
+    color: #5c5c5c;
+  }
+  
